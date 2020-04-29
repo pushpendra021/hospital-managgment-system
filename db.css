@@ -1,0 +1,88 @@
+body{
+    margin:0px;
+    padding:0px;
+}
+
+h1{
+    font-size:40px;
+    font-family:sans-serif;
+    text-align: center;
+    text-shadow: 0px 2px 4px rgb(25, 236, 106);
+    background-color: #ccc;;
+
+}
+
+.nav{
+    width:100%;
+    height:80px;
+    background:hsl(253, 88%, 50%);
+}
+
+ul{
+    list-style:none;
+    padding:0px;
+    margin:0px;
+    position: absolute;
+}
+
+ul li{
+    float:left;
+    margin:3px;
+    margin-left:15px;
+    padding:2px;
+}
+
+ul li a{
+    width:300px;
+    height:50px;
+    color:white;
+    display:block;
+    text-decoration: none;
+    font-size:22px;
+    text-align:center;
+    padding:15px;
+    font-family:sans-serif;
+    font-weight:bold;
+    text-transform:capitalize;
+
+            
+}
+a:hover{
+    background:rgb(33, 209, 165);
+    margin:0 auto;
+}
+ul li ul {
+    background: salmon;
+}
+ul li ul li {
+    float:none;
+}
+ul li ul{
+    display:none;
+}
+ul li:hover ul{
+    display:block;
+    border-radius:7px;
+}
+
+#hospital{
+    width:700px;
+    height:450px;
+    background:url("image/i.jpg") no-repeat;
+    margin:140px auto;
+    animation-name:wap;
+    animation-duration:6s;
+    animation-iteration-count: infinite;
+    padding:20px;
+ }
+@keyframes wap{
+    6%{background:url("image/i.jpg"); background-size:700px 450px;}
+    12%{background:url("image/b.jpg"); background-size:700px 450px;}
+    25%{background:url("image/c.jpg"); background-size:700px 450px;}
+    41%{background:url("image/d.jpg"); background-size:700px 450px;}
+    60%{background:url("image/e.jpg"); background-size:700px 450px;}
+    76%{background:url("image/f.jpg"); background-size:700px 450px;}
+    88%{background:url("image/g.jpg"); background-size:700px 450px;}
+    100%{background:url("image/h.jpg"); background-size:700px 450px;}
+}
+
